@@ -1,0 +1,54 @@
+/* Preprocessor */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1E1B18;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.game {
+  height: 400px;
+  width: 400px;
+}
+
+.grids {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.gridrow {
+  flex-grow: 1;
+  display: flex;
+}
+
+.grid {
+  background-color: #FFFAFF;
+  flex-grow: 1;
+  transition: all 0.3s;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.grid:hover {
+  opacity: 0.8;
+}
+
+.o {
+  background-color: #0A2463;
+}
+
+.x {
+  background-color: #D8315B;
+}
