@@ -1,44 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 /* Preprocessor */
+
 body {
   margin: 0;
   padding: 0;
   background-color: #1E1B18;
+  font-family: 'Montserrat', sans-serif;
+  color: #FFFAFF;
+  font-size: 70px;
 }
 
 .container {
   height: 100vh;
   width: 100vw;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.game {
-  height: 400px;
-  width: 400px;
-}
-
 .grids {
-  height: 400px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.gridrow {
-  flex-grow: 1;
-  display: flex;
+  height: 300px;
+  width: 300px;
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  gap: 5px;
 }
 
 .grid {
+  height: 100px;
+  height: 100px;
   background-color: #FFFAFF;
-  flex-grow: 1;
   transition: all 0.3s;
-  margin: 5px;
   border-radius: 5px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100px;
+  cursor: pointer;
 }
 
 .grid:hover {

@@ -35,10 +35,12 @@ const gamePlay = (event) => {
     if (oGameStatus) {
       event.currentTarget.dataset.game = "o";
       event.currentTarget.classList.add('o');
+      event.currentTarget.innerText = "O";
       oGameStatus = false;
     } else {
       event.currentTarget.dataset.game = "x";
       event.currentTarget.classList.add('x');
+      event.currentTarget.innerText = "X";
       oGameStatus = true;
     }
   }
